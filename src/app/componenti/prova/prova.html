@@ -1,3 +1,4 @@
+<!----
 <mat-card class="example-card" appearance="outlined">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
@@ -21,3 +22,25 @@
   </mat-card-actions>
 </mat-card>
 
+@if (daVedere) {
+    <div>
+        <p>Sono visibile</p>
+    </div>
+} @else {
+        <div>
+        <p>NON Sono visibile</p>
+    </div>
+}
+    -->
+
+<div>
+  @if (daVedere) {
+  @for (persona of persone; track persona; let i = $index; let isFirst = $first; let isLast = $last) {
+  <div>
+    <li>
+      {{i}} {{isFirst}}/{{isLast}} {{persona.nome}} {{persona.cognome}}
+    </li>
+  </div>
+  }
+  }
+</div>

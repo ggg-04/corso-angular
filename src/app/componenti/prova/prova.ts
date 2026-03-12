@@ -17,6 +17,16 @@ export class Prova{
     }
   ]
 
+  persone = [
+    {nome:'Luca', cognome:'Purino', isOnline:true, colore:'green'},
+    {nome:'Paola', cognome:'Strumel', isOnline:false, colore:'red'},
+    {nome:'Anna', cognome:'Berola', isOnline:true, colore:'grey'},
+    {nome:'Marcello', cognome:'Zucchetti', isOnline:false, colore:'blue'},
+    {nome:'Francesco', cognome:'Andreotti', isOnline:true, colore:'pink'}
+    ]
+
+  daVedere:boolean = true;
+
   isDisable = false;
 
   hoCliccato(e:any){
