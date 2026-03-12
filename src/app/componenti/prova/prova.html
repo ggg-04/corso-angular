@@ -1,0 +1,23 @@
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{title}}</mat-card-title>
+    <mat-card-subtitle>{{cani[0].razza}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.dev/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      {{cani[0].descrizione}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button matButton [disabled]="isDisable">LIKE</button>
+    <button mat-stroked-button (click)="hoCliccato('aaaa')">BASIC</button>
+  <mat-form-field class="example-full-width">
+    <mat-label>Favorite food</mat-label>
+    <input matInput placeholder="Ex. Pizza" [(ngModel)]="title"/>
+  </mat-form-field>
+
+  </mat-card-actions>
+</mat-card>
+
